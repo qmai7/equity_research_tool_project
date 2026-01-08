@@ -15,6 +15,7 @@ A RAG application that facilitates the day-to-day work of financial analyst. It 
 - Answers are generated using retrieved context (RAG)
 
 ## 🧠 Architecture Overview
+![Project architecture](Project_architecture.png)
 User \
 ↓
 Streamlit UI \
