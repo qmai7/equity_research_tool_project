@@ -47,13 +47,6 @@ git clone https://github.com/qmai7/equity_research_tool_project.git
 cd equity_research_tool_project
 ```
 
-### 3. Enter the virtual environment(recommended) and Install the required dependencies:
-```bash
-python -m venv .venv
-venv\Scripts\activate.bat     
-pip install -r requirements.txt
-```
-
 ### 4. Set up your keys by creating a .env file in the project root:
 ```bash
 OPENAI_API_KEY= your_key_here
@@ -63,18 +56,12 @@ LANGCHAIN_ENDPOINT= https://api.smith.langchain.com
 LANGCHAIN_PROJECT=my-tracing-test
 ```
 
-## Usage
-### 1. Run the FastAPI backend by executing:
+### 3. Build and run the containers: 
 ```bash
-uvicorn backend.api:app --reload
+docker compose up --build
 ```
 
-### 2. Open another terminal and Run the Streamlit frontend by executing:
-```bash
-streamlit run .\frontend\streamlit_app.py        
-```
-
-### 3. The web app will open in your browser:
+### 4. The web app will open in your browser:
 - On the left sidebar, you can input upto 3 articles' URLs directly.
 - Click on "Process URLs" to build the vector index and wait. 
 - Ask questions about the given articles on the right

@@ -1,0 +1,9 @@
+.venv/
+.idea/
+__pycache__/
+*.pyc
+vector_index/
+.git/
+.gitignore
+.env
+Extensions/
